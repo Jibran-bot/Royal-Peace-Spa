@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Peace Spa | Luxury Wellness India</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Base Styles */
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Playfair Display', serif, 'Segoe UI';
+            margin: 0;
+            padding: 0;
+            color: #3d3d3d;
+            background-color: #fffaf0; 
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container { display: flex; align-items: center; gap: 15px; }
+        .logo-img { height: 65px; width: auto; }
+        .logo-text { font-size: 24px; font-weight: bold; color: #b8860b; letter-spacing: 1px; text-transform: uppercase; }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* Purpose Section */
+        .purpose-section {
+            background-color: #b8860b;
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .purpose-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .purpose-item i { font-size: 2.5rem; margin-bottom: 15px; display: block; }
+
+        /* Services Section */
+        .container { max-width: 1200px; margin: 80px auto; padding: 0 20px; }
+        .section-title { text-align: center; margin-bottom: 60px; }
+        .section-title h2 { font-size: 2.8rem; color: #8b6b0c; border-bottom: 2px solid #b8860b; display: inline-block; padding-bottom: 10px; }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+            transition: 0.3s;
+        }
+
+        .service-card:hover { border-color: #b8860b; transform: translateY(-5px); }
+        .service-card h3 { color: #b8860b; border-bottom: 1px solid #f2e6d9; padding-bottom: 10px; }
+        
+        .service-list { list-style: none; padding: 0; }
+        .service-list li { margin: 12px 0; display: flex; align-items: center; gap: 10px; }
+        .service-list i { color: #b8860b; font-size: 0.8rem; }
+
+        footer { background-color: #1a1a1a; color: #d4af37; text-align: center; padding: 40px 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="C:\Users\LINK TRADERS LT\Downloads\Upscale\SPA\LOGO\ChatGPT Image Dec 16, 2025, 09_24_00 PM.png" alt="Royal Peace Spa Logo" class="logo-img">
+            <div class="logo-text">Royal Peace Spa</div>
+        </div>
+        <nav>
+            <a href="#services" style="text-decoration: none; color: #b8860b; font-weight: 700;">OUR SERVICES</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Royal Peace Spa</h1>
+            <p>India's Sanctuary for Mind, Body, and Soul</p>
+        </div>
+    </section>
+
+    <section class="purpose-section">
+        <h2>🎯 Our Purpose</h2>
+        <div class="purpose-grid">
+            <div class="purpose-item">
+                <i class="fas fa-leaf"></i>
+                <p>Reduce stress and anxiety</p>
+            </div>
+            <div class="purpose-item">
+                <i class="fas fa-heartbeat"></i>
+                <p>Relax muscles & improve circulation</p>
+            </div>
+            <div class="purpose-item">
+                <i class="fas fa-sparkles"></i>
+                <p>Improve skin health</p>
+            </div>
+            <div class="purpose-item">
+                <i class="fas fa-brain"></i>
+                <p>Refresh mind and body</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" id="services">
+        <div class="section-title">
+            <h2>Luxury Spa Facilities</h2>
+            <p>Discover our wide range of professional wellness services in India.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <h3><i class="fas fa-spa"></i> Body Relaxation</h3>
+                <ul class="service-list">
+                    <li><i class="fas fa-check"></i> Full body massage</li>
+                    <li><i class="fas fa-check"></i> Swedish massage</li>
+                    <li><i class="fas fa-check"></i> Deep tissue massage</li>
+                    <li><i class="fas fa-check"></i> Hot stone massage</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3><i class="fas fa-face-smile"></i> Skin & Beauty Care</h3>
+                <ul class="service-list">
+                    <li><i class="fas fa-check"></i> Facial treatments</li>
+                    <li><i class="fas fa-check"></i> Skin cleansing & glow therapies</li>
+                    <li><i class="fas fa-check"></i> Body scrubs & polishing</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3><i class="fas fa-hands-holding-hygiene"></i> Health & Wellness</h3>
+                <ul class="service-list">
+                    <li><i class="fas fa-check"></i> Steam bath / sauna</li>
+                    <li><i class="fas fa-check"></i> Aromatherapy</li>
+                    <li><i class="fas fa-check"></i> Reflexology (foot massage)</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3><i class="fas fa-cut"></i> Grooming & Care</h3>
+                <ul class="service-list">
+                    <li><i class="fas fa-check"></i> Manicure & pedicure</li>
+                    <li><i class="fas fa-check"></i> Hair spa treatments</li>
+                    <li><i class="fas fa-check"></i> Waxing & threading</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3><i class="fas fa-bolt"></i> Stress & Pain Relief</h3>
+                <ul class="service-list">
+                    <li><i class="fas fa-check"></i> Muscle pain relief therapies</li>
+                    <li><i class="fas fa-check"></i> Stress reduction sessions</li>
+                    <li><i class="fas fa-check"></i> Post-work fatigue recovery</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><i class="fas fa-map-marker-alt"></i> Royal Peace Spa, India</p>
+        <p>&copy; 2026 Royal Peace Spa. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
